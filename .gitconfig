@@ -1,0 +1,36 @@
+[alias]
+	a = add
+	aa = add --all
+	b = branch
+	c = commit -m
+	ca = !git add --all && git commit -m
+	cb = checkout -b
+	cc = commit --amend --no-edit
+	cca = !git add --all && git commit --amend --no-edit
+	cl = clone
+	co = checkout
+	cp = cherry-pick
+	cpa = cherry-pick --abort
+	cpc = cherry-pick --continue
+	cr = commit --amend -m
+	d = diff
+	l = !git --no-pager log --pretty='%C(red)%h%C(reset)%C(auto)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>%C(reset)' -15
+	la = "!f() { git --no-pager log --pretty='%C(red)%h%C(reset)%C(auto)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>%C(reset)' -15 --author=\"$1\"; }; f"
+	ll = log --all --graph --date=format:'%y/%b/%d' --pretty='%>|(17)%C(red)%h%C(reset) %C(green)(%cd) %C(bold blue)<%an>%C(reset)%>|(48)%C(reset) %C(auto)%d%C(reset) %s'
+	pf = push --force-with-lease
+	pff = push origin -f
+	pl = pull --rebase origin
+	pla = pull --abort
+	plc = pull --continue
+	ps = push origin
+	pu = push --set-upstream origin
+	s = stash
+	sa = stash apply
+	sc = stash clear
+	sl = stash list
+	sp = stash pop
+	st = status
+[user]
+	email = 
+	name = 
+  
